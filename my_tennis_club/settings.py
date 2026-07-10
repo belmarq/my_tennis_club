@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-lomq6u4p6y5=5%2cc6)4-b=t_@61r=%@y3so)cc^%y3!p3i+oz
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["lbeltran.pythonanywhere.com", "localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -122,3 +122,4 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / "static" ,]
+STATIC_ROOT = BASE_DIR / "staticfiles"
