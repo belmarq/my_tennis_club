@@ -14,9 +14,8 @@ class MembersView(View):
         fname = request.POST.get("fname", "")
         lname = request.POST.get("lname", "")
         print("fname:", fname, "lname:", lname)
-        miembros = Member.objects.filter(firstname__icontains=fname, lastname__icontains=lname)
-        for member in miembros:
-            print(member.firstname, member.lastname)
+        miembros = Member.objects.filter(
+            firstname__icontains=fname, lastname__icontains=lname)
         contexto = {"miembros": miembros, "titulo": "Miembros del Club"}
         return render(request, "myfirst.html", contexto)
 

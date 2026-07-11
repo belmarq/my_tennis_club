@@ -3,4 +3,3 @@ Set-ExecutionPolicy
 -Scope currentUser
 
 .gitignore
-esta linea no es nada
